@@ -28,3 +28,13 @@ function processarDados(callback){
     callback();
 }
 processarDados(() => console.log("Processo concluido!"));
+
+// Exercício 2B
+async function buscarUsuario() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve({ nome: "Fulano", id: 1 });
+        }, 1000); 
+    });
+}
+buscarUsuario().then(console.log);
