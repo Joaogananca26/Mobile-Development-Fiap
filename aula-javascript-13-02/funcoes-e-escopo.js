@@ -7,3 +7,7 @@ function converterParaMaiusculas(string) {
 let testar = "teste";
 let resultado = converterParaMaiusculas(testar)
 console.log(resultado)
+
+// Exercício 1B
+
+//const converterParaMaiusculas = (string) => string.toUpperCase();
