@@ -12,3 +12,8 @@ if (numero > 0) {
 } else {
     console.log("O número é zero.");
 }
+
+// Exercício B
+for (let i = 0; i < 11; i++){
+    console.log(i)
+}
