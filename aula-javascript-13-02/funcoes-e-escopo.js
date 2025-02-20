@@ -21,3 +21,10 @@ function escopo(){
 //console.log(mensagem)
 
 // Não é possivel mostrar essa mensagem, pois ela só pode ser acessada dentro da função na qual ela foi criada.
+
+// Exercício 2A
+function processarDados(callback){
+    console.log("Processando...");
+    callback();
+}
+processarDados(() => console.log("Processo concluido!"));
