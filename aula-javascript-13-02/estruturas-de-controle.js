@@ -30,3 +30,26 @@ while (i <= 5) {
 
 console.log("A soma dos números de 1 a 5 é: " + soma);
 
+// Exercício 2
+
+let opcao;
+
+do {
+    // Exibe o menu para o usuário
+    opcao = prompt("Escolha uma opção:\nA - Opção A\nB - Opção B\nS - Sair");
+
+    // Usando switch-case para tratar as opções
+    switch(opcao) {
+        case 'A':
+            console.log("Opção A selecionada");
+            break;
+        case 'B':
+            console.log("Opção B selecionada");
+            break;
+        case 'S':
+            console.log("Saindo...");
+            break;
+        default:
+            console.log("Opção inválida");
+    }
+} while (opcao !== 'S');
