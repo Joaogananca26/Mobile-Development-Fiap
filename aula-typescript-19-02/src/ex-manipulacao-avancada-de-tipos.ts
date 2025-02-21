@@ -14,3 +14,24 @@ function processarResposta(resposta: RespostaServidor): void {
 processarResposta("Dados processados com sucesso!");
 processarResposta(true);
 processarResposta(false);
+
+// Exercício 1B
+// Utilizando Intersection Types, crie um tipo EstudanteTrabalhador, que una as propriedades de um Estudante (nome e curso) e de um Trabalhador (empresa e cargo).
+// Depois, crie um objeto que represente um estudante que também trabalha e exiba os dados no console.
+
+type Estudante = {
+    nome: string;
+    curso: string;
+};
+type Trabalhador = {
+    empresa: string;
+    cargo: string;
+};
+type EstudanteTrabalhador = Estudante & Trabalhador;
+const estudanteTrabalhador: EstudanteTrabalhador = {
+    nome: "Rogério",
+    curso: "Medicina",
+    empresa: "Hospital Brasil",
+    cargo: "Cirurgião Plástico"
+};
+console.log("Estudante Trabalhador:", estudanteTrabalhador);
