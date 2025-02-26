@@ -1,4 +1,4 @@
-import { Veiculo } from "./veiculo";
+import { Veiculo } from "./Veiculo";
 
 export interface Moto extends Veiculo {
     cilindradas: number;

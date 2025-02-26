@@ -1,3 +1,4 @@
+import { Veiculo } from './interfaces/Veiculo';
 import { Carro } from "./interfaces/Carro";
 import { Moto } from "./interfaces/Moto";
 
@@ -19,3 +20,10 @@ console.log("Carro:", meuCarro);
 console.log(meuCarro.acelerar());
 console.log("Moto:", minhaMoto);
 console.log(minhaMoto.acelerar());
+
+let gerenciaCarro: GerenciadorVeiculos<Carro> 
+
+gerenciaCarro.adicionarVeiculo(meuCarro);
+console.log(gerenciaCarro.pegarVeiculos)
+gerenciaCarro.removerVeiculo(meuCarro, 0);
+console.log(gerenciaCarro.pegarVeiculos)
