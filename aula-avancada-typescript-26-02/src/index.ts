@@ -55,3 +55,15 @@ console.log("Veículos de 2024:", filtrarPorAno(veiculos, 2024));
 console.log("Veículos da marca Chevrolet:", filtrarPorMarca(veiculos, "Chevrolet"));
 
 console.log("Veículo modelo Honda:", filtrarPorModelo(veiculos, "Honda"));
+
+// Exercício 4
+
+
+import { gerarRelatorio } from "./utils/RelatorioVeiculo";
+
+const automoveis: Veiculo[] = [
+    { modelo: "Tracker", ano: 2019, marca: "Chevrolet" },
+    { modelo: "Biz 125", ano: 2024, marca: "Honda" }
+];
+
+console.log("Relatório de Veículos:\n", gerarRelatorio(automoveis));
