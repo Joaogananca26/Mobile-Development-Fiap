@@ -1,3 +1,5 @@
+// Exercício 1
+
 import { Veiculo } from './interfaces/Veiculo';
 import { Carro } from "./interfaces/Carro";
 import { Moto } from "./interfaces/Moto";
@@ -10,7 +12,7 @@ const meuCarro: Carro = {
     acelerar: () => "O carro está acelerando!"
 };
 const minhaMoto: Moto = {
-    marca: "Homda",
+    marca: "Honda",
     modelo: "Biz 125",
     ano: 2024,
     cilindradas: 120,
@@ -27,3 +29,17 @@ gerenciaCarro.adicionarVeiculo(meuCarro);
 console.log(gerenciaCarro.pegarVeiculos)
 gerenciaCarro.removerVeiculo(meuCarro, 0);
 console.log(gerenciaCarro.pegarVeiculos)
+
+// Exercício 2
+
+import { EstoqueVeiculos } from "./classes/EstoqueVeiculos";
+const estoque = new EstoqueVeiculos();
+// Adicionando veículos ao estoque
+estoque.adicionarEstoque("Tracker", 5);
+estoque.adicionarEstoque("Honda biz", 2);
+// Consultando estoque de "Civic"
+console.log("Estoque após adição:", estoque.consultarEstoque("Civic"));
+// Removendo 3 unidades de "Civic"
+estoque.removerEstoque("Civic", 3);
+// Consultando estoque de "Civic" novamente
+console.log("Estoque após remoção:", estoque.consultarEstoque("Civic"));
